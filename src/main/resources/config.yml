@@ -1,0 +1,100 @@
+permissions:
+  max-prefix: "mana.give."
+  max:
+    novice: 100.0
+    mage: 300.0
+    archmage: 1000.0
+  regen-prefix: "mana.regen."
+  regen:
+    novice: 1.0
+    mage: 2.5
+  refresh-seconds: 10.0
+
+mana:
+  initial: 0.0
+  save-seconds: 10.0
+  on-death: keep
+  respawn-value: 0.0
+
+regen:
+  require-activity: false
+  update-interval-ticks: 5.0
+
+bonuses:
+  sneak-still:
+    enabled: true
+    amount: 2.0
+  sit-lay:
+    enabled: true
+    amount: 2.0
+  sneak-moving:
+    enabled: true
+    amount: 1.0
+  standing-still:
+    enabled: true
+    amount: 1.0
+  soft-surface:
+    enabled: true
+    amount: 0.5
+    blocks: ["#beds", "#wool"]
+  full-food:
+    enabled: true
+    amount: 1.0
+    food-level: ">=20"
+  health-range:
+    enabled: true
+    amount: 1.0
+    health: "8..10"
+
+thresholds:
+  enabled: true
+  mode: bonus
+  list:
+    - at: 1000.0
+      amount: 1.0
+    - at: 1500.0
+      amount: 2.0
+
+sound-on-increase:
+  enabled: true
+  sound: BLOCK_AMETHYST_BLOCK_CHIME
+  volume: 0.5
+  pitch: 1.2
+  min-increase: 1.0
+  cooldown-ticks: 10.0
+  play-on-regen: false
+  play-on-add: true
+
+sound-on-full:
+  enabled: true
+  sound: BLOCK_BEACON_POWER_SELECT
+  volume: 0.5
+  pitch: 1.0
+
+hud:
+  direction: right-to-left
+  shift-x: 0.0
+  ascent: 8.0
+  width-steps: 10.0
+  refresh-ticks: 10.0
+  hide-when-full: false
+  show-number: true
+  number-decimals: 1.0
+  colors:
+    - from: 100.0
+      to: 80.0
+      color: "#1b3a8c"
+    - from: 80.0
+      to: 60.0
+      color: "#2f6de0"
+    - from: 60.0
+      to: 40.0
+      color: "#4ec9f0"
+    - from: 40.0
+      to: 20.0
+      color: "#f5d93a"
+    - from: 20.0
+      to: 0.0
+      color: "#f28c1e"
+    - at-zero: true
+      color: "#e02020"

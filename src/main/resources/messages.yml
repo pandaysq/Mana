@@ -1,0 +1,13 @@
+prefix: "<dark_gray>[<blue>Mana<dark_gray>] "
+mana:
+  self: "<prefix><aqua>Мана: <white><current>/<max> <gray>(реген: <white><regen><gray>/с)"
+  other: "<prefix><white><player><aqua>: <white><current>/<max> <gray>(реген: <white><regen><gray>/с)"
+  changed: "<prefix><green>Значение маны игрока <white><player><green> изменено."
+  no-player: "<prefix><red>Игрок не найден."
+  no-permission: "<prefix><red>Недостаточно прав."
+  invalid-number: "<prefix><red>Некорректное число."
+  usage: "<prefix><yellow>Использование: /mana [игрок], /mana set|add|take <игрок> <число>, /mana debug [игрок], /mana reload"
+  reloaded: "<prefix><green>Конфигурация перезагружена."
+  debug-header: "<prefix><aqua>Разбор маны игрока <white><player><aqua>:"
+  debug-line: "<gray>  <label>: <white><value>"
+  debug-permission: "<gray>  <permission>: <white><value>"

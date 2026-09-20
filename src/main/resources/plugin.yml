@@ -1,0 +1,23 @@
+name: Mana
+version: 1.0.0
+main: ru.core.mana.ManaPlugin
+api-version: '1.21'
+description: Configurable permission-based mana and regeneration system
+softdepend:
+  - GSit
+  - LuckPerms
+commands:
+  mana:
+    description: Shows and manages player mana
+    usage: /mana [player] | /mana <set|add|take> <player> <amount> | /mana debug [player] | /mana reload
+    aliases: [mp]
+permissions:
+  mana.view:
+    description: View your own mana
+    default: true
+  mana.view.others:
+    description: View another player's mana
+    default: op
+  mana.admin:
+    description: Manage mana and reload the plugin
+    default: op
